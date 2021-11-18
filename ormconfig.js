@@ -21,7 +21,7 @@ switch (process.env.NODE_ENV) {
       migrationsRun: true,
       entities: ['**/*.entity.js'],
       ssl: {
-        rejectUnauthorized: true,
+        rejectUnauthorized: false,
       },
     });
     break;
