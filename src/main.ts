@@ -9,6 +9,10 @@ async function bootstrap() {
       whitelist: true
     })
   )
-  await app.listen(3000);
+  let port = 3000
+  if(process.env.NODE_ENV === 'production'){
+    port = 5000
+  }
+  await app.listen(port);
 }
 bootstrap();
