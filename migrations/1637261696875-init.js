@@ -1,4 +1,4 @@
-const { MigrationInterface, QueryRunner } = require('typeorm');
+const { MigrationInterface, QueryRunner, Table } = require('typeorm');
 
 module.exports = class init1637261696875 {
   name = 'init1637261696875';
